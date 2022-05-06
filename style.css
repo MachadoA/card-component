@@ -1,0 +1,104 @@
+body {
+    font-family: 'Outfit', sans-serif;
+    color: hsl(215, 51%, 70%);
+    line-height: 1.5;
+}
+
+p {
+    font-size: 15px;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+}
+
+.principal{
+    width: 275;
+    height: 280px;
+}
+
+.avatar {
+    width: 35px;
+    height: 35px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.side-by-side{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid hsl(215, 51%, 30%);
+    margin-bottom: 5px;
+}
+
+.side-by-side p:first-of-type {
+    color: hsl(178, 100%, 50%);
+}
+
+.side {
+    display: flex;
+    align-items: center;
+}
+
+.side p {
+    padding-left: 15px;
+}
+
+span{
+    color: hsl(212, 45%, 89%);
+}
+
+.wrapper {
+    background-color: hsl(216, 50%, 16%);
+    width: 280px;
+    height: 500px;
+    padding: 23px;
+    border-radius: 8px;
+}
+
+.container {
+    background-color: hsl(217, 54%, 11%);
+    width: 375px;
+    height: 667px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+@media screen and (max-width: 375px){
+    .wrapper {
+        width: 280px;
+        height: 500px;
+    }
+    .container {
+        width: 100%;
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .container {
+        margin: 0 auto;
+        width: 100%;
+        height: 900px;
+    }
+
+    .principal:hover{
+        background-color: hsl(178, 100%, 50%);
+    }
+
+    h1:hover{
+        color: hsl(178, 100%, 50%);
+        cursor: pointer;
+    }
+
+    span:hover{
+        cursor: pointer;
+        color: hsl(178, 100%, 50%);
+    }
+}
